@@ -12,6 +12,9 @@
 		DFBC413A1F23348500481FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBC41381F23348500481FDA /* Main.storyboard */; };
 		DFBC413C1F23348500481FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBC413B1F23348500481FDA /* Assets.xcassets */; };
 		DFBC413F1F23348500481FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBC413D1F23348500481FDA /* LaunchScreen.storyboard */; };
+		DFBC41491F2335FA00481FDA /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFBC41471F2335CE00481FDA /* Inceptionv3.mlmodel */; };
+		DFBC414B1F2340A000481FDA /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBC414A1F2340A000481FDA /* CameraCapture.swift */; };
+		DFBC414E1F2343EC00481FDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC414D1F2343D200481FDA /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DFBC413B1F23348500481FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFBC413E1F23348500481FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFBC41401F23348500481FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBC41471F2335CE00481FDA /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		DFBC414A1F2340A000481FDA /* CameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		DFBC414D1F2343D200481FDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBC414E1F2343EC00481FDA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,10 @@
 		DFBC41281F23348500481FDA = {
 			isa = PBXGroup;
 			children = (
+				DFBC41471F2335CE00481FDA /* Inceptionv3.mlmodel */,
 				DFBC41331F23348500481FDA /* CoreMLInseptionSample */,
 				DFBC41321F23348500481FDA /* Products */,
+				DFBC414C1F2343D200481FDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,21 @@
 			children = (
 				DFBC41341F23348500481FDA /* AppDelegate.swift */,
 				DFBC41361F23348500481FDA /* ViewController.swift */,
+				DFBC414A1F2340A000481FDA /* CameraCapture.swift */,
 				DFBC41381F23348500481FDA /* Main.storyboard */,
 				DFBC413B1F23348500481FDA /* Assets.xcassets */,
 				DFBC413D1F23348500481FDA /* LaunchScreen.storyboard */,
 				DFBC41401F23348500481FDA /* Info.plist */,
 			);
 			path = CoreMLInseptionSample;
+			sourceTree = "<group>";
+		};
+		DFBC414C1F2343D200481FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC414D1F2343D200481FDA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFBC41371F23348500481FDA /* ViewController.swift in Sources */,
+				DFBC41491F2335FA00481FDA /* Inceptionv3.mlmodel in Sources */,
 				DFBC41351F23348500481FDA /* AppDelegate.swift in Sources */,
+				DFBC414B1F2340A000481FDA /* CameraCapture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +336,7 @@
 				DFBC41451F23348500481FDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
